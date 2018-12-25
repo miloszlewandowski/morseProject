@@ -14,6 +14,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.milosz.morseproject.controller.WordInputController;
+
 import java.io.IOException;
 
 public class MainActivity extends Activity {
@@ -22,19 +24,20 @@ public class MainActivity extends Activity {
     private long start;
     private long end;
     private MediaPlayer beepSound;
+    private WordInputController characterInput = new WordInputController("abba");
     private final Handler handler = new Handler();
     private final Runnable runnable = new Runnable() {
         public void run() {
 
             long result = end - start;
-            if(result >= 500) {
-                Log.i("dlugi","dlugi");
 
-            }
-            else {
-                Log.i("krotki","krotki");
+            characterInput.acceptRawSignal(result);
 
+            if (characterInput.isFinished()) {
+                Log.i("mikolaj","rozpoznano literkolaja");
             }
+
+
         }
     };
 
