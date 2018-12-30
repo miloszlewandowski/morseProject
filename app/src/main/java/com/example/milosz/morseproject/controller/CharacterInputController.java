@@ -12,11 +12,6 @@ public class CharacterInputController {
 
     public CharacterInputController(Character character) {
         this.character = character;
-
-
-
-
-
     }
 
     public boolean acceptRawSignal(long signalLength) {
@@ -34,5 +29,9 @@ public class CharacterInputController {
     public boolean isFinished() {
         return this.index == this.character.getSignals().length;
     }
-    
+
+    public Character getCharacter() {
+        return this.character;
+    }
+
 }

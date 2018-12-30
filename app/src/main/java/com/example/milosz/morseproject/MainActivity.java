@@ -13,8 +13,10 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.milosz.morseproject.controller.WordInputController;
+import com.example.milosz.morseproject.model.SignalLength;
 
 import java.io.IOException;
 
@@ -24,16 +26,17 @@ public class MainActivity extends Activity {
     private long start;
     private long end;
     private MediaPlayer beepSound;
-    private WordInputController characterInput = new WordInputController("abba");
+    private LinearLayout linearLayout;
+    private String word = "abba";
+    private WordInputController wordInput = new WordInputController(word);
     private final Handler handler = new Handler();
     private final Runnable runnable = new Runnable() {
         public void run() {
 
             long result = end - start;
+            wordInput.acceptRawSignal(result);
 
-            characterInput.acceptRawSignal(result);
-
-            if (characterInput.isFinished()) {
+            if (wordInput.isFinished()) {
                 Log.i("mikolaj","rozpoznano literkolaja");
             }
 
@@ -50,8 +53,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         actionArea = (Button)findViewById(R.id.actionArea);
-
+        this.linearLayout = (LinearLayout)findViewById(R.id.linearLayout);
         beepSound = MediaPlayer.create(this,R.raw.beep);
+        this.wordInputController.setOnNewCharacterListener(MainActivity::renderCharacterSignals);
         actionArea.setOnTouchListener(new View.OnTouchListener() {
 
 
@@ -112,5 +116,28 @@ public class MainActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void renderCharacterSignals(SignalLength[] signalsArray) {
+        while (this.linearLayout.getChildCount() > 0) {
+            this.linearLayout.removeViewAt(0);
+        }
+        for (SignalLength signal : signalsArray) {
+            ImageView imageView = new ImageView(this);
+
+            switch (signal) {
+                case SignalLength.SHORT: {
+                    imageView.setImageResource(R.drawable.periodSymbol);
+                    break;
+                }
+                case SignalLength.LONG: {
+                    imageView.setImageResource(R.drawable.minusSymbol);
+                    break;
+                }
+                case SignalLength.UNDEFINED: {
+                    assert(false);
+                }
+            }
+        }
     }
 }

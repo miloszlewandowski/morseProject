@@ -17,7 +17,12 @@
             android:layout_height="0dp"
             android:layout_width="fill_parent">
         </LinearLayout>
-
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
             android:layout_height="0dp"
@@ -38,5 +43,6 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_dialog_email" />
+
 
 </RelativeLayout>
