@@ -36,25 +36,33 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/actionArea"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
 
-            <Button
-                android:id="@+id/actionArea"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@android:color/transparent" />
             <ProgressBar
                 android:id="@+id/progressbar"
                 style="@android:style/Widget.ProgressBar.Horizontal"
-                android:max="100"
-                android:progress="0"
+                android:visibility="invisible"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/bottom_header_relativelayout"
+                android:padding="50sp"
                 />
+            <TextView
+                android:id="@+id/points_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:visibility="invisible"
+                android:gravity="center"
+                />
+
+
         </LinearLayout>
 
     </LinearLayout>

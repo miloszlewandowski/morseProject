@@ -21,9 +21,10 @@ public class CharacterInputController {
         } else if (length == this.character.getSignals()[this.index]) {
             this.index++;
             return true;
-        } else return false;
-
-
+        } else {
+            this.index = 0;
+            return false;
+        }
     }
 
     public boolean isFinished() {

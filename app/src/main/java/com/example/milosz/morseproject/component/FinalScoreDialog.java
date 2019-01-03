@@ -6,20 +6,20 @@ import android.content.DialogInterface;
 
 import com.example.milosz.morseproject.R;
 
-public class TutorialFinishedDialog {
-    public TutorialFinishedDialog(Context context, int titleResId, int bodyResId, Runnable onOkClickListener) {
+public class FinalScoreDialog {
+
+    public FinalScoreDialog(Context context, int score, Runnable r) {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(context);
 
-        dialogBuilder.setTitle(titleResId);
-        dialogBuilder.setMessage(bodyResId);
+        dialogBuilder.setTitle("mikusie");
+        dialogBuilder.setMessage(String.format("Your score is: %d", score));
         dialogBuilder.setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                onOkClickListener.run();
+               r.run();
             }
         });
         dialogBuilder.setCancelable(false);
         dialogBuilder.create().show();
     }
-
 }

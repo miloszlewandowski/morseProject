@@ -6,7 +6,12 @@
     <string name="easy_button">Easy Mode</string>
     <string name="difficult_mode">Difficult Mode</string>
     <string name="alphabet_picture">Alphabet</string>
-    <string name="tutorial_finished_dialog_title">Congratulations</string>
+    <string name="tutorial_finished_dialog_title">Congratulations!</string>
     <string name="tutorial_finished_dialog_body">You have finished the tutorial. Go and try the Easy Mode now!</string>
     <string name="OK">OK</string>
+    <string name="easy_mode_dialog_title">Congratulations!</string>
+    <string name="easy_mode_dialog_body">You have finished the Easy Mode. Go and try the Difficult Mode now!</string>
+    <string name="difficult_mode_dialog_title">Congratulations!</string>
+    <string name="difficult_mode_dialog_body">You have finished the Difficult Mode.</string>
+
 </resources>
