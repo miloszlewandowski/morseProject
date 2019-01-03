@@ -8,17 +8,17 @@ public class SignalConverter {
     public SignalLength convert(long length) {
 
         if(length >= 500 && length < 1500) {
-            Log.i("mikolaj","long");
+            Log.e("mikolaj","long");
             return SignalLength.LONG;
         }
 
         else if(length < 500) {
-            Log.i("mikolaj","short");
+            Log.e("mikolaj","short");
             return SignalLength.SHORT;
         }
 
         else {
-            Log.i("mikolaj","undefined");
+            Log.e("mikolaj","undefined");
             return SignalLength.UNDEFINED;
         }
     }

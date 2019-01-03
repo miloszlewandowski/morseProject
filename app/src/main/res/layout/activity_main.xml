@@ -5,33 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".MainActivity">
+    tools:context=".activity.BaseGameActivity">
 
 
-    <LinearLayout android:orientation="vertical"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_width="fill_parent">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_weight="1"
-            android:layout_height="0dp"
-            android:layout_width="fill_parent">
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:orientation="horizontal"
+            android:id="@+id/textView"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
-        </LinearLayout>
-        <LinearLayout
-            android:layout_weight="1"
             android:layout_height="0dp"
-            android:layout_width="fill_parent">
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation='horizontal'>
 
-            <Button android:id="@+id/actionArea"
-                android:layout_height="fill_parent"
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/renderedSignals"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_margin="10sp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/actionArea"
                 android:layout_width="fill_parent"
-                android:background="@android:color/transparent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent" />
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:max="100"
+                android:progress="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_header_relativelayout"
                 />
         </LinearLayout>
 

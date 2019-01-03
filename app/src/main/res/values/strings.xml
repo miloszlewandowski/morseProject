@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">morseProject</string>
     <string name="action_settings">Settings</string>
+    <string name="game_title">reMorseless Teacher</string>
+    <string name="tutorial_button">Tutorial</string>
+    <string name="easy_button">Easy Mode</string>
+    <string name="difficult_mode">Difficult Mode</string>
+    <string name="alphabet_picture">Alphabet</string>
+    <string name="tutorial_finished_dialog_title">Congratulations</string>
+    <string name="tutorial_finished_dialog_body">You have finished the tutorial. Go and try the Easy Mode now!</string>
+    <string name="OK">OK</string>
 </resources>

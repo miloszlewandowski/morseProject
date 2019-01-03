@@ -44,26 +44,25 @@ public enum Character {
     private SignalLength[] signals;
 
     Character(char character, SignalLength[] signals) {
-
         this.character = character;
         this.signals = signals;
-
-
-
     }
 
     public static Character fromCharacter(char character) {
-        if (character == 'a') {
-            return Character.A;
-        } else if (character == 'b') {
-            return Character.B;
-        } else {
-            return Character.UNDEFINED;
+        character = java.lang.Character.toString(character).toLowerCase().toCharArray()[0];
+        for (Character c : Character.values()) {
+            if (character == c.character) {
+                return c;
+            }
         }
+        throw new RuntimeException("Could not convert char to Character");
     }
 
     public SignalLength[] getSignals() {
         return signals;
     }
 
+    public char getCharacter() {
+        return this.character;
+    }
 }
