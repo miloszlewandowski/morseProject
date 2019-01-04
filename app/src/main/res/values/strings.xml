@@ -13,5 +13,8 @@
     <string name="easy_mode_dialog_body">You have finished the Easy Mode. Go and try the Difficult Mode now!</string>
     <string name="difficult_mode_dialog_title">Congratulations!</string>
     <string name="difficult_mode_dialog_body">You have finished the Difficult Mode.</string>
-
+    <string name="best_scores_button">Best Scores</string>
+    <string name="best_scores_label">Best Scores</string>
+    <string name="game_finished_title">Hold your finger!</string>
+    <string name="game_finished_body">Your score is: </string>
 </resources>

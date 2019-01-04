@@ -11,13 +11,25 @@ public class Words {
     private int index = 0;
 
     public Words() {
-        wordList.add(abba);
     }
     public List<String> getWordList() {
         return Arrays.asList(
-                "abba",
-                "baba",
-                "baca"
+                "sailing",
+                "crush",
+                "baby",
+                "faint",
+                "child",
+                "parent",
+                "zebra",
+                "insist",
+                "magic",
+                "train",
+                "heist",
+                "word",
+                "pants",
+                "dance",
+                "great",
+                "fox"
         );
     }
 

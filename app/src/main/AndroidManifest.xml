@@ -24,7 +24,8 @@
         <activity android:name=".activity.TutorialActivity" />
         <activity android:name=".activity.EasyActivity" />
         <activity android:name=".activity.DifficultActivity" />
-        <activity android:name=".activity.AlphabetActivity"></activity>
+        <activity android:name=".activity.AlphabetActivity"/>
+        <activity android:name=".activity.BestScoreActivity"/>
     </application>
 
 </manifest>

@@ -232,7 +232,7 @@ public abstract class BaseGameActivity extends Activity {
         if(!this.isProgressBarEnabled()) {
             return;
         }
-        int time = 2000;
+        int time = 20000;
         if (this.timer != null) {
             this.timer.cancel();
         }

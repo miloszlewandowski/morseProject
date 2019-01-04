@@ -18,6 +18,7 @@ public class MenuActivity extends Activity {
         this.findViewById(R.id.tutorial_button).setOnClickListener(this::onTutorialClick);
         this.findViewById(R.id.easy_button).setOnClickListener(this::onEasyModeClick);
         this.findViewById(R.id.difficult_button).setOnClickListener(this::onDifficultModeClick);
+        this.findViewById(R.id.best_scores_button).setOnClickListener(this::onBestScoreClick);
     }
 
     private void onAlphabetClick(View v) {
@@ -37,6 +38,11 @@ public class MenuActivity extends Activity {
 
     private void onDifficultModeClick(View v) {
         Intent intent = new Intent(this,DifficultActivity.class);
+        this.startActivity(intent);
+    }
+
+    private void onBestScoreClick(View v) {
+        Intent intent = new Intent(this,BestScoreActivity.class);
         this.startActivity(intent);
     }
 }
