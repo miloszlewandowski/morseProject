@@ -29,12 +29,11 @@
         <LinearLayout
             android:id="@+id/renderTable"
             android:layout_width="match_parent"
-            android:layout_height="629dp"
+            android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:orientation="horizontal"
             android:gravity="center"
-            android:paddingBottom="400dp"
-            android:layout_marginRight="100dp">
+            android:marginRight="85dp">
 
         </LinearLayout>
 

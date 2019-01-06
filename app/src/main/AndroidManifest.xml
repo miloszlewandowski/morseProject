@@ -27,7 +27,6 @@
         <activity android:name=".activity.DifficultActivity" />
         <activity android:name=".activity.AlphabetActivity" />
         <activity android:name=".activity.BestScoreActivity" />
-        <activity android:name=".component.HelpDialog"></activity>
     </application>
 
 </manifest>

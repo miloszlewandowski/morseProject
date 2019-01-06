@@ -3,7 +3,6 @@ package com.example.milosz.morseproject.component;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-
 import com.example.milosz.morseproject.R;
 
 public class FinalScoreDialog {
