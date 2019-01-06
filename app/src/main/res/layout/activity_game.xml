@@ -8,6 +8,18 @@
     tools:context=".activity.BaseGameActivity">
 
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="17dp"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        app:backgroundTint="@android:color/holo_green_light" />
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -69,15 +81,28 @@
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fab1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_gravity="bottom|end"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="35dp"
-         />
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="17dp"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        app:backgroundTint="@android:color/holo_green_light" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="289dp"
+        android:src="@android:drawable/ic_menu_help"
+        app:backgroundTint="@color/design_default_color_primary_dark" />
 
 
 </RelativeLayout>

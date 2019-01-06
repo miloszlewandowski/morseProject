@@ -3,6 +3,7 @@ package com.example.milosz.morseproject.activity;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Build;
@@ -110,12 +111,13 @@ public abstract class BaseGameActivity extends Activity {
         });
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab1);
+        fab.setOnClickListener(this::onPauseClick);
+        FloatingActionButton fabhelp = (FloatingActionButton) findViewById(R.id.fabhelp);
+        fabhelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, "short tap stands for period (short sign) and long tap for hyphen (long sign) ", Snackbar.LENGTH_LONG).show();
             }
         });
         this.displayWord(this.getWords().get(0));
@@ -269,6 +271,11 @@ public abstract class BaseGameActivity extends Activity {
         this.pointsView.setVisibility(View.VISIBLE);
         this.pointsView.setText(String.format("Points earned: %d", this.points));
         this.pointsView.setTextSize(20);
+    }
+
+    private void onPauseClick(View v) {
+        Intent intent = new Intent(this,MenuActivity.class);
+        this.startActivity(intent);
     }
     protected boolean isSignalRenderingEnabled() {
         return true;

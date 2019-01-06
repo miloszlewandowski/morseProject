@@ -19,6 +19,9 @@
     <string name="game_finished_body">Your score is: </string>
     <string name="help_button">?</string>
     <string name="help_dialog_title">Need some help?</string>
+    <string name="game_paused_title">Game Paused</string>
+    <string name="menu_button">Menu</string>
+    <string name="help_button_game">Help</string>
     <string name="help_dialog_body">-If you are a beginner try Tutorial \n \n-Too easy? Try Easy Mode and put whole words \n \n-Need some challange? Press Difficult Mode button and get some points with limited time and no hints. \n \n-Check your improvments in Best Scores section</string>
 
 </resources>
