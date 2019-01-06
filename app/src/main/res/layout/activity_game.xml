@@ -77,7 +77,7 @@
         android:layout_gravity="bottom|end"
         android:layout_marginTop="19dp"
         android:layout_marginEnd="35dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+         />
 
 
 </RelativeLayout>

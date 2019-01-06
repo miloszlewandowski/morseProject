@@ -33,7 +33,7 @@
             android:layout_margin="10sp"
             android:orientation="horizontal"
             android:gravity="center"
-            android:marginRight="85dp">
+            android:paddingRight="85dp">
 
         </LinearLayout>
 
