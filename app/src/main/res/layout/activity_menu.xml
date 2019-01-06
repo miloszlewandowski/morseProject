@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center">
 
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="250dp">
+
+        <Button
+            android:id="@+id/help_button"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginRight="58dp"
+            android:paddingBottom="10sp"
+            android:text="@string/help_button" />
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,7 +65,12 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="58dp"
         android:layout_marginLeft="58dp"
-        android:text="@string/best_scores_button"/>
+        android:text="@string/best_scores_button"
+        android:layout_marginBottom="100dp"/>
+
+
+
+
 
 
 </LinearLayout>

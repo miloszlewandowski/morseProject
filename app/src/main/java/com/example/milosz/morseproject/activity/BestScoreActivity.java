@@ -40,13 +40,16 @@ public class BestScoreActivity extends Activity {
             text2.setText(Integer.toString(score));
             text1.setTextSize(22);
             text1.setTextColor(Color.BLACK);
-            text1.setLetterSpacing(2);
+            text1.setLetterSpacing(10);
             text2.setTextSize(22);
             text2.setTextColor(Color.BLACK);
             tableRow.addView(text1);
             tableRow.addView(text2);
             tableLayout.addView(tableRow);
             index++;
+            if(index==10) {
+                return;
+            }
         }
     }
 }

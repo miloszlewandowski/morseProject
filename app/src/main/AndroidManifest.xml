@@ -3,6 +3,7 @@
     package="com.example.milosz.morseproject">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,8 +25,9 @@
         <activity android:name=".activity.TutorialActivity" />
         <activity android:name=".activity.EasyActivity" />
         <activity android:name=".activity.DifficultActivity" />
-        <activity android:name=".activity.AlphabetActivity"/>
-        <activity android:name=".activity.BestScoreActivity"/>
+        <activity android:name=".activity.AlphabetActivity" />
+        <activity android:name=".activity.BestScoreActivity" />
+        <activity android:name=".component.HelpDialog"></activity>
     </application>
 
 </manifest>

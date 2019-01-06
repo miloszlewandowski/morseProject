@@ -17,4 +17,8 @@
     <string name="best_scores_label">Best Scores</string>
     <string name="game_finished_title">Hold your finger!</string>
     <string name="game_finished_body">Your score is: </string>
+    <string name="help_button">?</string>
+    <string name="help_dialog_title">Need some help?</string>
+    <!--<string name="help_dialog_body">-If you are a beginner try Tutorial \n-Too easy? Try Easy Mode and put whole words \n-Need some challange? Press Difficult Mode button and get some points with limited time and no hints. \nCheck your improvments in Best Scores section</string>-->
+
 </resources>

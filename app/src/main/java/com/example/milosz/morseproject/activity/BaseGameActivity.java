@@ -261,6 +261,7 @@ public abstract class BaseGameActivity extends Activity {
         }
         this.pointsView.setVisibility(View.VISIBLE);
         this.pointsView.setText(String.format("Points earned: %d", this.points));
+        this.pointsView.setTextSize(20);
     }
     protected boolean isSignalRenderingEnabled() {
         return true;

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.milosz.morseproject.R;
+import com.example.milosz.morseproject.component.HelpDialog;
 
 public class MenuActivity extends Activity {
 
@@ -19,6 +20,7 @@ public class MenuActivity extends Activity {
         this.findViewById(R.id.easy_button).setOnClickListener(this::onEasyModeClick);
         this.findViewById(R.id.difficult_button).setOnClickListener(this::onDifficultModeClick);
         this.findViewById(R.id.best_scores_button).setOnClickListener(this::onBestScoreClick);
+        this.findViewById(R.id.help_button).setOnClickListener(this::onHelpClick);
     }
 
     private void onAlphabetClick(View v) {
@@ -43,6 +45,11 @@ public class MenuActivity extends Activity {
 
     private void onBestScoreClick(View v) {
         Intent intent = new Intent(this,BestScoreActivity.class);
+        this.startActivity(intent);
+    }
+
+    private void onHelpClick(View v) {
+        Intent intent = new Intent(this,HelpDialog.class);
         this.startActivity(intent);
     }
 }
